@@ -54,6 +54,7 @@ a.active {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
+  text-align: center;
 }
 
 .bk-masthead p{
