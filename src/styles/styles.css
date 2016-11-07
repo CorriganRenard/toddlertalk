@@ -1,0 +1,151 @@
+#app {
+  font: 14px 'Helvetica Neue', Helvetic, Arial, sans-serif;
+  color: #4d4d4d;
+  min-width: 550px;
+
+  margin: 0 auto;
+}
+
+#yard {
+  max-width: 850px;
+  text-align: center;
+}
+#data-page {
+  max-width: 850px;
+  text-align: center;
+}
+
+
+#form {
+  max-width: 850px;
+}
+#form h1{
+  text-align: center;
+}
+#header{
+  max-width: 850px;
+}
+.row {
+  margin: 0 auto;
+}
+a.active {
+  color: orange;
+}
+
+.nav-item {
+  padding-top: 10px;
+}
+.navbar-right {
+  float: right!important;
+  right: -15px;
+}
+
+.card-block {
+  text-align: center;
+}
+
+
+
+.bk-masthead {
+  color: black;
+  height: 700px;
+  width: 100%;
+  background-image: url('../components/home/horizontal-top-bar-hive.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+.bk-masthead p{
+  position: relative;
+  top: 40px;
+}
+
+#get-started{
+  position: relative;
+  top: 500px;
+}
+.header1-text{
+  position: relative;
+  top: 30px;
+}
+
+.bk-masthead p, .bk-masthead h1{
+  text-align: center;
+}
+
+div .row .jumbotron{
+  padding-top: 10px;
+
+
+
+
+}
+
+
+.separator h1 {
+  text-align: center;
+
+
+}
+.hiveLink {
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  width: 60px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.separator {
+
+  height: 60px;
+  margin: 40px;
+}
+
+
+.hiveLink h6 {
+  padding-top: 15px;
+}
+
+.hive-lid{
+  text-align: center;
+  padding: 0;
+  vertical-align: middle;
+}
+.frame{
+  height: 135px;
+  padding: 0;
+}
+.hive-lid img {
+  position: relative;
+  left: -22px;
+
+}
+
+.center-content {
+
+
+  text-align: center;
+}
+
+
+.overview-buttons {
+
+  margin-right: 10px;
+}
+
+
+footer {
+  padding-top: 20px;
+  border-top: 10px solid #332e20;
+  background-color: white;
+  height: 160px;
+}
+
+
+.bottom-rule {
+  border-bottom: 1px solid lightgray;
+}
+
