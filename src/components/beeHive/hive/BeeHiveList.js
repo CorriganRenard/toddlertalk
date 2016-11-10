@@ -9,7 +9,6 @@ const BeeHiveList = ({beeHives}) => {
 
           <BeeHiveListIcon key={beeHive.id} beeHive={beeHive}/>
 
-
       )}
       </div>
   );

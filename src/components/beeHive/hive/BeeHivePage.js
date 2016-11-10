@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as beeHiveActions from '../../actions/beeHiveActions';
+import * as beeHiveActions from '../../../actions/beeHiveActions';
 import BeeHiveList from './BeeHiveList';
 
 import {browserHistory} from 'react-router';

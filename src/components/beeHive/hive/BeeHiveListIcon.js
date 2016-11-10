@@ -13,7 +13,7 @@ const BeeHiveListIcon = ({beeHive}) => {
           <h4 className="card-title"> {beeHive.title}</h4>
           <h6 className="card-subtitle text-muted">{beeHive.hiveTypeId}</h6>
         </div>
-        <img height="200" alt="Card image cap" src={require('../home/' + beeHive.hiveTypeId + '.png')} />
+        <img height="200" alt="Card image cap" src={require('../../home/' + beeHive.hiveTypeId + '.png')} />
         <div className="card-block">
 
               <p>Date Created: {beeHive.birthdate}</p>

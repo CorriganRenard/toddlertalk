@@ -10,7 +10,7 @@ const HiveLid = () => {
 
 
                 <div className="hive-lid">
-                    <img className="img-responsive" width="120%" src={require('../home/hive-roof.png')} />
+                    <img className="img-responsive" width="120%" src={require('../../home/hive-roof.png')} />
                     </div>
 
         </div>

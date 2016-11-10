@@ -3,9 +3,9 @@ import { Route, IndexRoute } from 'react-router';
 import App from './components/App';
 import HomePage from './components/home/HomePage';
 import AboutPage from './components/about/AboutPage';
-import BeeHivePage from './components/beeHive/BeeHivePage';
+import BeeHivePage from './components/beeHive/hive/BeeHivePage';
 import ManageBeeHivePage from './components/beeHive/ManageBeeHivePage';
-import BeeHiveDataPage from './components/beeHive/BeeHiveDataPage';
+import BeeHiveDataPage from './components/beeHive/hive/BeeHiveDataPage';
 import ManageSuperPage from './components/beeHive/ManageSuperPage';
 
 export default (
@@ -18,7 +18,5 @@ export default (
     <Route path="hivedata/:id/superbox/:superid" component={ManageSuperPage} />
     <Route path="about" component={AboutPage} />
     <Route path="hivedata/:id" component={BeeHiveDataPage} />
-
-
   </Route>
 );

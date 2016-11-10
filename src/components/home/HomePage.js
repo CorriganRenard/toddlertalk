@@ -60,7 +60,7 @@ class HomePage extends React.Component {
           <hr className="half-rule" />
 
           <div className="row separator">
-            <h1>CONFIGURE YOUR HIVE</h1>
+           {/*<h1>CONFIGURE YOUR HIVE</h1>
           </div>
           <div className="row">
 
@@ -89,7 +89,7 @@ class HomePage extends React.Component {
               <div className="demo-item">
                 track image
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

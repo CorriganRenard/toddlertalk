@@ -12,44 +12,34 @@ const beeHives = [
    /* TypeDiagramRef: ""*/
     birthdate: getCurrentDate(),
     numsupers: "2",
-    supers: [
-      {
-        id: "my-first-super",
-        title: "My First Super",
-        superTypeId: "honey",
-        frames: [
-          {
-            id: "my-first-frame",
-            title: "My First Super",
-            frameTypeId: "honey"
-          },
-          {
-            id: "my-first-frame",
-            title: "My First Super",
-            frameTypeId: "honey"
-          }
-        ]
-      },
-      {
-        id: "my-second-super",
-        title: "My Second Super",
-        superTypeId: "brood",
-        frames: [
-          {
-            id: "my-first-frame",
-            title: "My First Super",
-            frameTypeId: "honey"
-
-          },
-          {
-            id: "my-first-frame",
-            title: "My First Super",
-            frameTypeId: "honey"
-
-          }
-        ]
-      }]
-
+    supers:
+      [{id: "super01", title: "My First Super", superTypeId: "honey", frames: [
+        {id: "super01-frame01", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super01-frame02", title: "My Second Frame", frameTypeId: "honey"},
+        {id: "super01-frame03", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super01-frame04", title: "My Second Frame", frameTypeId: "honey"},
+        {id: "super01-frame05", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super01-frame06", title: "My Second Frame", frameTypeId: "honey"},
+        {id: "super01-frame07", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super01-frame08", title: "My Second Frame", frameTypeId: "honey"},
+        {id: "super01-frame09", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super01-frame10", title: "My Second Frame", frameTypeId: "honey"},
+        {id: "super01-frame11", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super01-frame12", title: "My Second Frame", frameTypeId: "honey"}]},
+      {id: "super02", title: "My Second Super", superTypeId: "brood", frames: [
+        {id: "super02-frame01", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super02-frame02", title: "My Second Frame", frameTypeId: "honey"},
+        {id: "super02-frame03", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super02-frame04", title: "My Second Frame", frameTypeId: "honey"},
+        {id: "super02-frame05", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super02-frame06", title: "My Second Frame", frameTypeId: "honey"},
+        {id: "super02-frame07", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super02-frame08", title: "My Second Frame", frameTypeId: "honey"},
+        {id: "super02-frame09", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super02-frame10", title: "My Second Frame", frameTypeId: "honey"},
+        {id: "super02-frame11", title: "My First Frame", frameTypeId: "honey"},
+        {id: "super02-frame12", title: "My Second Frame", frameTypeId: "honey"}]}
+    ]
   }
 ];
 
@@ -112,13 +102,32 @@ class BeeHiveApi {
           //Cloning so copy returned is passed by value rather than by reference.
           beeHive.id = generateId(beeHive);
           beeHive.supers =
-          [{id: "my-first-super", title: "My First Super", superTypeId: "honey", frames: [
-                {id: "my-first-frame", title: "My First Frame", frameTypeId: "honey"},
-                {id: "my-second-frame", title: "My Second Frame", frameTypeId: "honey"}]},
-           {id: "my-second-super", title: "My Second Super", superTypeId: "brood", frames: [
-                {id: "my-first-frame", title: "My First Frame", frameTypeId: "honey"},
-                {id: "my-second-frame", title: "My Second Frame", frameTypeId: "honey"}]}
-          ]
+              [{id: "super01", title: "My First Super", superTypeId: "honey", frames: [
+                  {id: "super01-frame01", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super01-frame02", title: "My Second Frame", frameTypeId: "honey"},
+                  {id: "super01-frame03", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super01-frame04", title: "My Second Frame", frameTypeId: "honey"},
+                  {id: "super01-frame05", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super01-frame06", title: "My Second Frame", frameTypeId: "honey"},
+                  {id: "super01-frame07", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super01-frame08", title: "My Second Frame", frameTypeId: "honey"},
+                  {id: "super01-frame09", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super01-frame10", title: "My Second Frame", frameTypeId: "honey"},
+                  {id: "super01-frame11", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super01-frame12", title: "My Second Frame", frameTypeId: "honey"}]},
+              {id: "super02", title: "My Second Super", superTypeId: "brood", frames: [
+                  {id: "super02-frame01", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super02-frame02", title: "My Second Frame", frameTypeId: "honey"},
+                  {id: "super02-frame03", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super02-frame04", title: "My Second Frame", frameTypeId: "honey"},
+                  {id: "super02-frame05", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super02-frame06", title: "My Second Frame", frameTypeId: "honey"},
+                  {id: "super02-frame07", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super02-frame08", title: "My Second Frame", frameTypeId: "honey"},
+                  {id: "super02-frame09", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super02-frame10", title: "My Second Frame", frameTypeId: "honey"},
+                  {id: "super02-frame11", title: "My First Frame", frameTypeId: "honey"},
+                  {id: "super02-frame12", title: "My Second Frame", frameTypeId: "honey"}]}];
           beeHives.unshift(beeHive);
         }
 
@@ -126,24 +135,21 @@ class BeeHiveApi {
       }, delay);
     });
   }
-  static saveSuperBox(beeHive, superBox) {
+  static saveSuperBox(beeHive) {
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        // Simulate server-side validation
-        const minSuperBoxTitleLength = 1;
-        if (superBox.title.length < minSuperBoxTitleLength) {
-          reject(`Title must be at least ${minSuperBoxTitleLength} characters.`);
-        }
+    setTimeout(() => {
+      // Simulate server-side validation
+      const minBeeHiveTitleLength = 1;
+      if (beeHive.title.length < minBeeHiveTitleLength) {
+        reject(`Title must be at least ${minBeeHiveTitleLength} characters.`);
+      }
 
-        if (beeHive.id) {
-          const existingBeeHiveIndex = beeHives.findIndex(a => a.id == beeHive.id);
-          beeHives.splice(existingBeeHiveIndex, 1, beeHive);
-        } else {
-          //Just simulating creation here.
-          //The server would generate ids and watchHref's for new beeHives in a real
-          //Cloning so copy returned is passed by value rather than by reference.
-          console.log('you must add supers to a beehive');
-        }
+      if (beeHive.id) {
+        const existingBeeHiveIndex = beeHives.findIndex(a => a.id == beeHive.id);
+        beeHives.splice(existingBeeHiveIndex, 1, beeHive);
+      } else {
+      console.log('no beehive.id received');
+      }
 
         resolve(Object.assign({}, beeHive));
       }, delay);

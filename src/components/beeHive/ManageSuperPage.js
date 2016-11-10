@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as beeHiveActions from '../../actions/beeHiveActions';
-import SuperBoxForm from './SuperBoxForm';
+import SuperBoxForm from './supers/SuperBoxForm';
 
 
 class ManageSuperPage extends React.Component {
@@ -62,6 +62,7 @@ class ManageSuperPage extends React.Component {
 
 ManageSuperPage.propTypes = {
   superBox: PropTypes.object.isRequired,
+  superBoxes: PropTypes.object.isRequired,
   superTypes: PropTypes.array.isRequired,
   actions: PropTypes.object.isRequired
 
@@ -82,7 +83,7 @@ function mapStateToProps(state, ownProps){
 
     const beeHiveId = ownProps.params.id;
 
-    const superId = ownProps.params.id.superid;
+
     let beeHive = getBeeHiveById(state.beeHives, beeHiveId);
     let superBox = {id: '', title: '', superTypeId: '', frames: []};
 

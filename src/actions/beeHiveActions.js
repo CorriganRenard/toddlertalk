@@ -68,7 +68,7 @@ export function saveBeeHive(beeHive) {
 export function saveSuperBox(beeHive) {
   return function (dispatch, getState) {
     dispatch(beginAjaxCall());
-    return BeeHiveApi.saveBeeHive(beeHive).then(savedBeeHive => {
+    return BeeHiveApi.saveSuperBox(beeHive).then(savedBeeHive => {
      dispatch(updateBeeHivesSuccess(savedBeeHive));
     }).catch(error => {
       throw(error);

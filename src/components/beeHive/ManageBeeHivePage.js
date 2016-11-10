@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as beeHiveActions from '../../actions/beeHiveActions';
-import BeeHiveForm from './BeeHiveForm';
+import BeeHiveForm from './hive/BeeHiveForm';
 
 
 class ManageBeeHivePage extends React.Component {
@@ -61,6 +61,7 @@ ManageBeeHivePage.propTypes = {
   beeHive: PropTypes.object.isRequired,
   hiveTypes: PropTypes.array.isRequired,
   actions: PropTypes.object.isRequired
+
 
 };
 
