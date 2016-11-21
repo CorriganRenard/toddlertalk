@@ -7,10 +7,7 @@ import configureStore from './store/configureStore.dev';
 import {Provider} from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
-import {loadBeeHives} from './actions/beeHiveActions';
-import {loadHiveTypes} from './actions/hiveTypeActions';
-
-import {loadSuperTypes} from './actions/superTypeActions';
+import {loadQuotes} from './actions';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './styles/styles.css';
 // import '../node_modules/jquery/dist/jquery.min';
@@ -18,10 +15,8 @@ import './styles/styles.css';
 
 const store = configureStore();
 
-store.dispatch(loadBeeHives());
+store.dispatch(loadQuotes());
 
-store.dispatch(loadHiveTypes());
-store.dispatch(loadSuperTypes());
 
 render(
   <Provider store={store}>

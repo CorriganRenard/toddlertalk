@@ -50,7 +50,9 @@ a.active {
   color: black;
   height: 700px;
   width: 100%;
+  /*
   background-image: url('../components/home/horizontal-top-bar-hive.jpg');
+  */
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
